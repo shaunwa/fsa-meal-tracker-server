@@ -1,0 +1,18 @@
+{
+  "name": "fsa-meal-tracker-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"start": "babel-node my-file.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.15.0",
+    "@babel/node": "7.14.9",
+    "@babel/preset-env": "7.15.0"
+  }
+}
