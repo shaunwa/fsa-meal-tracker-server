@@ -1,4 +1,5 @@
 import express from 'express';
+import { db } from './db';
 import { routes } from './routes';
 const app = express();
 
@@ -9,6 +10,7 @@ routes.forEach(route => {
 });
 
 const start = async () => {
+	await db.connect('mongodb://localhost:27017');
     await app.listen(8080);
     console.log("Listening on port 8080");
 }
