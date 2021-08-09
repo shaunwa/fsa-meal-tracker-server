@@ -1,7 +1,10 @@
+import { getPopulatedMeals } from '../db';
+
 export const getMealsRoute = {
     method: 'get',
     path: '/meals',
     handler: async (req, res) => {
-		res.send('Getting meals... (not implemented)');
+        const meals = await getPopulatedMeals();
+        res.status(200).json(meals);
     },
 }
